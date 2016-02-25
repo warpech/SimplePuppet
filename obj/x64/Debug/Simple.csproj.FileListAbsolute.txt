@@ -1,0 +1,5 @@
+C:\www\warpech\SimplePuppet\obj\x64\Debug\Simple.csprojResolveAssemblyReference.cache
+C:\www\warpech\SimplePuppet\bin\Debug\Simple.exe
+C:\www\warpech\SimplePuppet\bin\Debug\Simple.pdb
+C:\www\warpech\SimplePuppet\obj\x64\Debug\Simple.exe
+C:\www\warpech\SimplePuppet\obj\x64\Debug\Simple.pdb
