@@ -4,20 +4,19 @@ using Starcounter;
 namespace Simple {
     class Program {
         static void Main() {
-                Handle.GET("/simple", () => {
-                    Session session = Session.Current;
+            var htmlFromJson = new MyProvider();
+            htmlFromJson.ProvisionImplicitStandalonePages = true;
+            Application.Current.Use(htmlFromJson);
 
-                    if (session != null && session.Data != null)
-                        return session.Data;
+            Handle.GET("/simple", () => {
+                var json = new Simple();
+                return json;
+            });
 
-                    if (session == null) {
-                        session = new Session(SessionOptions.PatchVersioning);
-                    }
-
-                    var page = new Simple();
-                    page.Session = session;
-                    return page;
-                });
+            Handle.GET("/simple/raw", () => {
+                var json = new Raw();
+                return json;
+            });
         }
     }
 }

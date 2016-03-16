@@ -1,7 +1,7 @@
 using Starcounter;
 
 namespace Simple {
-    partial class Simple : Page {
+    partial class Simple : Json {
         void Handle(Input.Reverse action) {
             char[] arr = Text.ToCharArray();
             System.Array.Reverse(arr);
