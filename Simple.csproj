@@ -64,7 +64,6 @@
     <Compile Include="Raw.json.cs">
       <DependentUpon>Raw.json</DependentUpon>
     </Compile>
-    <Compile Include="SimpleHtmlFromJsonProvider.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Simple.json.cs">

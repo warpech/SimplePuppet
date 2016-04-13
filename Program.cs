@@ -4,9 +4,7 @@ using Starcounter;
 namespace Simple {
     class Program {
         static void Main() {
-            var htmlFromJson = new MyProvider();
-            htmlFromJson.ProvisionImplicitStandalonePages = true;
-            Application.Current.Use(htmlFromJson);
+            Application.Current.Use(new HtmlFromJsonProvider());
 
             Handle.GET("/simple", () => {
                 var json = new Simple();
